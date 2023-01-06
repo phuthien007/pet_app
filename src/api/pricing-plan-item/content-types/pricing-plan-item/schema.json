@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pricing_plan_items",
+  "info": {
+    "singularName": "pricing-plan-item",
+    "pluralName": "pricing-plan-items",
+    "displayName": "PricingPlanItem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "required": true,
+      "default": 0,
+      "type": "integer"
+    },
+    "service_product_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service-product-item.service-product-item",
+      "mappedBy": "pricing_plan_item"
+    }
+  }
+}

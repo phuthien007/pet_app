@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testmonists",
+  "info": {
+    "singularName": "testmonist",
+    "pluralName": "testmonists",
+    "displayName": "Testmonist"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "comment": {
+      "type": "text",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "job": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

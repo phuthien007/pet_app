@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "team_member_items",
+  "info": {
+    "singularName": "team-member-item",
+    "pluralName": "team-member-items",
+    "displayName": "TeamMemberItem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "job": {
+      "type": "string",
+      "required": true
+    },
+    "social_medias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::social-media.social-media",
+      "mappedBy": "team_member_item"
+    }
+  }
+}

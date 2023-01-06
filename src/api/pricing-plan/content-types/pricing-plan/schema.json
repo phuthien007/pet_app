@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pricing_plans",
+  "info": {
+    "singularName": "pricing-plan",
+    "pluralName": "pricing-plans",
+    "displayName": "PricingPlan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "pricing_plan_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pricing-plan-item.pricing-plan-item"
+    }
+  }
+}

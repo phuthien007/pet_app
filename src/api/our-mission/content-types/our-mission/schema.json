@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "our_missions",
+  "info": {
+    "singularName": "our-mission",
+    "pluralName": "our-missions",
+    "displayName": "OurMission",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "detail": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

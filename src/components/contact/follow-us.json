@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_contact_followuses",
+  "info": {
+    "displayName": "FollowUs",
+    "icon": "globe-americas",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "twitter",
+        "instagram",
+        "linkedin",
+        "youtube"
+      ]
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_product_items",
+  "info": {
+    "singularName": "service-product-item",
+    "pluralName": "service-product-items",
+    "displayName": "ServiceProductItem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "pricing_plan_item": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::pricing-plan-item.pricing-plan-item",
+      "inversedBy": "service_product_items"
+    }
+  }
+}

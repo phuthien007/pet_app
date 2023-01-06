@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_yrdy_yrdies",
+  "info": {
+    "displayName": "yrdy",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "yrdy": {
+      "type": "string"
+    },
+    "yr": {
+      "type": "string"
+    }
+  }
+}
